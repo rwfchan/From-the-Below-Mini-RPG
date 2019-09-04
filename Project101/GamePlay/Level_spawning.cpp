@@ -3,7 +3,7 @@
 //
 
 #include "Spawn_group.h"
-#include "Punisher_boss.h"
+#include "../Monster_File/Punisher_boss.h"
 
 void Spawn_group::get_info(int level) const {
   switch(level) {

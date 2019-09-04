@@ -3,7 +3,7 @@
 //
 
 #include "Meat_Tenderizer.h"
-#include "Monsters.h"
+#include "../Monster_File/Monsters.h"
 
 Meat_Tenderizer::Meat_Tenderizer() : Weapon("Meat Tenderizer", Sword, Primary, 0, addition, attack, -10, nothing, bleed) {}
 

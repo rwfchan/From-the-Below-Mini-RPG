@@ -1,76 +1,75 @@
 //
-// Created by Raymond Chan on 3/28/18.
+// Created by Raymond Chan on 3/26/18.
 //
 
-#include "Imp.h"
-#include "Unity.h"
+#include "Skeleton.h"
+#include "../others/Unity.h"
 
-Imp::Imp() : Monsters("Imp", 10, hostile, 0){
+Skeleton::Skeleton() : Monsters("Skeleton", 5, hostile, 1){
   unsigned int seed = 0;
 
   seed = static_cast<unsigned int>(rand());
   if(true_false_randomizer(seed)){
-    hp = 10 + rand() % 5;
+    hp = 30 + rand() % 5;
     max_hp = hp;
   } else {
-    hp = 10 + (rand() % 5 * -1);
+    hp = 30 + (rand() % 5 * -1);
     max_hp = hp;
   }
 
   seed = static_cast<unsigned int>(rand());
   if(true_false_randomizer(seed)){
-    attack = 10 + rand() % 5;
+    attack = 17 + rand() % 5;
   } else {
-    attack = 10 + (rand() % 5 * -1);
+    attack = 17 + (rand() % 5 * -1);
   }
 
   seed = static_cast<unsigned int>(rand());
   if(true_false_randomizer(seed)){
-    defend = 10 + rand() % 5;
+    defend = 5 + rand() % 5;
   } else {
-    defend = 10 + (rand() % 5 * -1);
+    defend = 5 + (rand() % 5 * -1);
   }
 
   seed = static_cast<unsigned int>(rand());
   if(true_false_randomizer(seed)){
-    speed = 15 + rand() % 5;
+    speed = 7 + rand() % 5;
   } else {
-    speed = 15 + (rand() % 5 * -1);
+    speed = 7 + (rand() % 5 * -1);
   }
 }
 
-int Imp::special_attack(Player &player) {
+int Skeleton::special_attack(Player &player) {
   return 0;
 }
-
-void Imp::print_monster(int i, int position) {
-  switch (i) { //Imp have 7 spaces
+void Skeleton::print_monster(int i, int position) {
+  switch (i) { //Skeleton have 7 spaces
     case 0:
       monster_spacing();
-      std::cout << "     ";
+      std::cout <<  " " << ' ';
       monster_tag_color(nothing, position);
       print_name();
-      std::cout << "       ";
+      std::cout << "     ";
       monster_spacing();
       break;
     case 1:
       monster_spacing();
-      std::cout << "    /v\\___/\\     ";
+      std::cout << "     _____       ";
       monster_spacing();
       break;
     case 2:
       monster_spacing();
-      std::cout << "    | -  o |     ";
+      std::cout << "    | o o |      ";
       monster_spacing();
       break;
     case 3:
       monster_spacing();
-      std::cout << "    | (00) |     ";
+      std::cout << "     \\ A /       ";
       monster_spacing();
       break;
     case 4:
       monster_spacing();
-      std::cout << "    \\-==-=-/     ";
+      std::cout << "     [===]       ";
       monster_spacing();
       break;
     case 5:
@@ -89,8 +88,7 @@ void Imp::print_monster(int i, int position) {
       print_speed();
       break;
     default:
-      std::cout << "Default for imp" << std::endl;
+      std::cout << "Default for skeleton" << std::endl;
       break;
   }
 }
-

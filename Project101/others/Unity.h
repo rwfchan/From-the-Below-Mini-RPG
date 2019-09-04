@@ -1,14 +1,14 @@
 //
 // Created by Raymond Chan on 3/26/18.
 //
-#ifndef UNITY_H_
-#define UNITY_H_
-
 #include <iostream>
 #include <sstream>
 #include <iomanip>
 #include <vector>
 #include "enum_only.h"
+
+#ifndef PROJECT101_UNITY_H
+#define PROJECT101_UNITY_H
 
 bool true_false_randomizer(unsigned int seed);
 bool input_incorrect(int user_input = 99999, std::vector<int> vaild_inputs = {99999});
@@ -31,4 +31,5 @@ const static char color_gray[] = { 0x1b, '[', '1', ';', '3', '7', 'm', 0 };
 const static char color_black[] = { 0x1b, '[', '1', ';', '3', '8', 'm', 0 };
 const static char color_normal[] = { 0x1b, '[', '0', ';', '3', '9', 'm', 0 };
 
-#endif  // UNITY_H_
+
+#endif //PROJECT101_UNITY_H

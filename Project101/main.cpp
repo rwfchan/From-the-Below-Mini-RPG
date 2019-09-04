@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Unity.h"
-#include "Spawn_group.h"
-#include "After_battle.h"
-#include "moves.h"
-#include "Player.h"
+#include "GamePlay/Player.h"
+#include "GamePlay/Spawn_group.h"
+#include "others/Unity.h"
+#include "GamePlay/After_battle.h"
+#include "GamePlay/moves.h"
 
 int main() {
   print_beginning();

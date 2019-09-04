@@ -5,7 +5,7 @@
 #ifndef PROJECT101_AFTER_BATTLE_H
 #define PROJECT101_AFTER_BATTLE_H
 
-#include "enum_only.h"
+#include "../others/enum_only.h"
 
 class Player;
 class Spawn_group;

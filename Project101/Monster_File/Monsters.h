@@ -9,7 +9,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include "enum_only.h"
+#include "../others/enum_only.h"
 
 class Player;
 
@@ -44,7 +44,7 @@ class Monsters {
   void add_status(status status, int turn);
   void remove_status(std::pair<enum status, int>& status);
 
-  std::vector<std::pair<status, int> >& get_status_list();
+  std::vector<std::pair<status, int>>& get_status_list();
   status get_status(int pos);
   int get_afflicted_turn(int pos);
 

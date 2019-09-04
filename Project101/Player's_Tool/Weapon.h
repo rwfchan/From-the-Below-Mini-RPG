@@ -5,8 +5,8 @@
 #ifndef PROJECT101_WEAPON_H
 #define PROJECT101_WEAPON_H
 
-#include "enum_only.h"
-#include "Unity.h"
+#include "../others/enum_only.h"
+#include "../others/Unity.h"
 #include <string>
 class Monsters;
 

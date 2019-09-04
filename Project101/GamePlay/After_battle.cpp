@@ -5,7 +5,7 @@
 #include "After_battle.h"
 #include "Spawn_group.h"
 #include "Player.h"
-#include "Unity.h"
+#include "../others/Unity.h"
 
 void improve_after_slaining(Player &player, stat stat1) {
   auto improvement = static_cast<int>(player.get_stat(stat1) * 0.1);

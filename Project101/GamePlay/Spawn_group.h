@@ -4,9 +4,9 @@
 
 #include <memory>
 #include <vector>
-#include "enum_only.h"
-#include "Monsters.h"
-#include "Monster_list.h"
+#include "../others/enum_only.h"
+#include "../Monster_File/Monsters.h"
+#include "../Monster_File/Monster_list.h"
 
 #ifndef PROJECT101_SPAWN_GROUP_H
 #define PROJECT101_SPAWN_GROUP_H

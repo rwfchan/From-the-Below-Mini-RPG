@@ -5,8 +5,8 @@
 #ifndef PROJECT101_WEAPON_VAULT_H
 #define PROJECT101_WEAPON_VAULT_H
 
-#include "Empty_weapon.h"
-#include "Chopping_Sword.h"
-#include "Bashing_Shield.h"
+#include "../Player's_Tool/Empty_weapon.h"
+#include "../Player's_Tool/Chopping_Sword.h"
+#include "../Player's_Tool/Bashing_Shield.h"
 
 #endif //PROJECT101_WEAPON_VAULT_H

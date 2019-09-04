@@ -5,8 +5,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "enum_only.h"
-#include "Weapon_vault.h"
+#include "../others/enum_only.h"
+#include "../Player's_Tool/Weapon_vault.h"
 
 #ifndef PROJECT101_PLAYER_H
 #define PROJECT101_PLAYER_H

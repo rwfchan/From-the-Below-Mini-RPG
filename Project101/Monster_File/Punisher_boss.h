@@ -3,7 +3,7 @@
 //
 
 #include "Monsters.h"
-#include "Player.h"
+#include "../GamePlay/Player.h"
 
 #ifndef PROJECT101_PUNISHER_BOSS_H
 #define PROJECT101_PUNISHER_BOSS_H
