@@ -1,14 +1,17 @@
 //
 // Created by Raymond Chan on 3/26/18.
 //
+
+#ifndef PROJECT101_UNITY_H
+#define PROJECT101_UNITY_H
+
 #include <iostream>
 #include <sstream>
 #include <iomanip>
 #include <vector>
+#include <climits>
+#include <algorithm>
 #include "enum_only.h"
-
-#ifndef PROJECT101_UNITY_H
-#define PROJECT101_UNITY_H
 
 bool true_false_randomizer(unsigned int seed);
 bool input_incorrect(int user_input = 99999, std::vector<int> vaild_inputs = {99999});
